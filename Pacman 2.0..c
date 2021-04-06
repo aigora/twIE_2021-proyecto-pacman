@@ -26,6 +26,8 @@ void main()
 
     scanf("%i",&seleccion);
 
+    //Aqui el menu nos da a elegir entre los 3 modos de juego con un bucle
+
     switch (seleccion)
     {
         case 1:
