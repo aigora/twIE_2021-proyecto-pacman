@@ -29,7 +29,7 @@ void main()
     switch (seleccion)
     {
         case 1:
-        mododejuego1;
+        mododejuego1
         break;
     case 2:
         mododejuego2;
