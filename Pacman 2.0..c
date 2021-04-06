@@ -2,6 +2,7 @@
 #include<windows.h>
 #include <stdio.h>
 #include<conio.h>
+
 int mododejuego1(int a, int b);
 int mododejuego3(int c, int d);
 int mododejuego2(int e, int f);
@@ -10,19 +11,74 @@ int mododejuego2(int e, int f);
 void main()
 {
     int seleccion;
-
-    printf("*********************************************\n");
-
-    printf("Eliga el modo de juego:\n");
-    printf("\n");
-    printf("\n");
-    printf("-Para modo de juego 1 pulse 1 e intro\n");
-    printf("\n");
-    printf("-Para modo de juego 2 pulse 2 e intro\n");
-    printf("\n");
-    printf("-Para modo de juego 3 pulse 3 e intro\n");
-    printf("\n");
-    printf("-Para cerrar probrama pulse cualquier otra tecla e intro\n");
+    system("COLOR B0");
+    printf("\033[0;31m");
+    printf("***************************************************************\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[4;32m");
+    printf("                   Eliga el modo de juego                    ");
+    printf("\033[0;35m");
+    printf("*\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[1;35m");
+    printf("  -Para modo de juego 1 pulse 1 e intro");
+    printf("\033[0;35m");
+    printf("                      *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[1;33m");
+    printf("  -Para modo de juego 2 pulse 2 e intro");
+    printf("\033[0;35m");
+    printf("                      *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[1;36 m");
+    printf("  -Para modo de juego 3 pulse 3 e intro");
+    printf("\033[0;35m");
+    printf("                      *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;37m");
+    printf("  -Para cerrar probrama pulse cualquier otra tecla e intro");
+    printf("\033[0;35m");
+    printf("   *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;36m");
+    printf("*");
+    printf("\033[0;35m");
+    printf("                                                             *\n");
+    printf("\033[0;32m");
+    printf("***************************************************************\n");
+    printf("\033[0m");
 
     scanf("%i",&seleccion);
 
@@ -31,7 +87,7 @@ void main()
     switch (seleccion)
     {
         case 1:
-        mododejuego1
+        mododejuego1;
         break;
     case 2:
         mododejuego2;
