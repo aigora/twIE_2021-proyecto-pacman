@@ -4,8 +4,8 @@
 #include<conio.h>
 
 int mododejuego1(int a, int b);
-int mododejuego3(int c, int d);
-int mododejuego2(int e, int f);
+int mododejuego2(int c, int d);
+int mododejuego3(int e, int f);
 //Aqui definimos las funciones de los tres modos de juego
 
 void main()
