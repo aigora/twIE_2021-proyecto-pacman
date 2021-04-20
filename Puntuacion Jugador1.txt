@@ -1,3 +1,3 @@
 Puntuaciones Jugador 1:
-Nombre: manuela
+Nombre: Alejandro
 Puntuacion: 0
