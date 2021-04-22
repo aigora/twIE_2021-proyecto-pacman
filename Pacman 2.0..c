@@ -4,8 +4,8 @@
 
 //Aqui definimos las funciones de los dos modos de juego
 
-int mododejuego1(int a, int b);
-int mododejuego2(int c, int d);
+void mododejuego1();
+void mododejuego2();
 
 //definimos la funcion que genera el mapa en pantalla
 
@@ -70,10 +70,10 @@ int main()
     switch (seleccion)
     {
         case 1:
-        mododejuego1;
+        mododejuego1();
         break;
     case 2:
-        mododejuego2;
+        mododejuego2();
         break;
     default: return 0;
         break;
@@ -91,12 +91,13 @@ int main()
 //desarrollo de las funciones principales
 
 
-int mododejuego1(a, b)
+void mododejuego1()
 {
+    imprimir_mapa();
 
 }
 
-int mododejuego2(c, d)
+void mododejuego2()
 {
 
 }
@@ -108,7 +109,10 @@ void imprimir_mapa()
     int maximocolumnas = 31;
 
     for(fila=0 ; fila<maximofilas ; fila++){
-        for(columna=0 ; columna<maximocolumnas ; columna++);
+        for(columna=0 ; columna<maximocolumnas ; columna++)
+            printf("%c\t", mapa[fila][columna]);
+
+        printf("\n");
     }
 }
 
