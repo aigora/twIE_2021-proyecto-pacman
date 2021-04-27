@@ -1,11 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define KEY_UP 72
+#define KEY_DOWN 80
+#define KEY_RIGHT 77
+#define KEY_LEFT 75
+
 
 //Aqui definimos las funciones de los dos modos de juego
 
 void mododejuego1();
 void mododejuego2();
+
+//funciones de movimiento
+
+void movimiento_pacman();
+void puntos_modo1();
+void colision_fantasma();
+void puntos_modo2();
+void colisionmapa();
 
 //definimos la funcion que genera el mapa en pantalla
 
@@ -13,27 +26,26 @@ void imprimir_mapa();
 
 //aqui definimos la matriz mapa
 
-char mapa[20][31]={
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    "X           XXXXX           X"
-    "X XXX XXXXX XXXXX XXXXX XXX X"
-    "X XXX XXXXX XXXXX XXXXX XXX X"
-    "X                           X"
-    "X XXX XX XXXXXXXXXXX XX XXX X"
-    "X     XX     XXX     XX     X"
-    "X XXX XXXXXX XXX XXXXXX XXX X"
-    "X XXX XX             XX XXX X"
-    "      XX XXXXXXXXXXX XX      "
-    "X XXX XX XXXXXXXXXXX XX XXX X"
-    "X XXX XX             XX XXX X"
-    "X XXX XXXXXX XXX XXXXXX XXX X"
-    "X     XX     XXX     XX     X"
-    "X XXX XX XXXXXXXXXXX XX XXX X"
-    "X                           X"
-    "X XXX XXXXX XXXXX XXXXX XXX X"
-    "X XXX XXXXX XXXXX XXXXX XXX X"
-    "X           XXXXX           X"
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+char mapa[19][31]={
+    "|===========================|"
+    "|.......F...........F.......|"
+    "|.===.=====.=====.=====.===.|"
+    "|.....F.....................|"
+    "|.===.==.===========.==.===.|"
+    "|...........................|"
+    "|.....==.....===.....==.....|"
+    "|.......F.............F.....|"
+    "|.===.=====.=====.=====.===.|"
+    "|.......F...................|"
+    "|.===.=====.=====.=====.===.|"
+    "|.....................F.....|"
+    "|.....==.....===.....==.....|"
+    "|....F......................|"
+    "|.===.==.===========.==.===.|"
+    "|.............C.............|"
+    "|.===.=====.=====.=====.===.|"
+    "|......F....................|"
+    "|===========================|"
 };
 
 //estructura en la que se generaran las puntuaciones
@@ -105,7 +117,7 @@ void mododejuego2()
 void imprimir_mapa()
 {
     int fila, columna;
-    int maximofilas = 20;
+    int maximofilas = 19;
     int maximocolumnas = 31;
 
     for(fila=0 ; fila<maximofilas ; fila++){
@@ -114,5 +126,26 @@ void imprimir_mapa()
 
         printf("\n");
     }
+}
+
+void movimiento_pacman()
+{
+    int tecla, i, j;
+
+    tecla = getch();
+
+
+    if (tecla = KEY_UP && mapa[i][j] = 'C')
+        mapa[i-1][j] = mapa[i][j]
+        mapa[i][j] = '';
+        else if (tecla = KEY_DOWN && mapa[i][j] = 'C')
+            mapa[i+1][j] = mapa[i][j]
+            mapa[i][j] = '';
+        else if (tecla = KEY_RIGHT && mapa[i][j]='C')
+            mapa[i][j+1] = mapa[i][j]
+            mapa[i][j] = '';
+        else if (tecla = KEY_LEFT && mapa[i][j]='C')
+            mapa[i][j-1] = mapa[i][j]
+            mapa[i][j] = '';
 }
 

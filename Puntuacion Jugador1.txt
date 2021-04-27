@@ -1,7 +1,3 @@
 Puntuaciones Jugador 1:
-<<<<<<< Updated upstream
 Nombre: pedro
-=======
-Nombre: Ines
->>>>>>> Stashed changes
 Puntuacion: 0
