@@ -128,24 +128,5 @@ void imprimir_mapa()
     }
 }
 
-void movimiento_pacman()
-{
-    int tecla, i, j;
 
-    tecla = getch();
-
-
-    if (tecla = KEY_UP && mapa[i][j] = 'C')
-        mapa[i-1][j] = mapa[i][j]
-        mapa[i][j] = '';
-        else if (tecla = KEY_DOWN && mapa[i][j] = 'C')
-            mapa[i+1][j] = mapa[i][j]
-            mapa[i][j] = '';
-        else if (tecla = KEY_RIGHT && mapa[i][j]='C')
-            mapa[i][j+1] = mapa[i][j]
-            mapa[i][j] = '';
-        else if (tecla = KEY_LEFT && mapa[i][j]='C')
-            mapa[i][j-1] = mapa[i][j]
-            mapa[i][j] = '';
-}
 
