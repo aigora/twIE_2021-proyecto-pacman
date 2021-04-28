@@ -24,20 +24,6 @@ void colisionmapa();
 
 void imprimir_mapa();
 
-//aqui definimos la matriz mapa
-
-char mapa[9][22]={
-    "|==================|",
-    "|.......  .F.......|",
-    "|.===.5=.=====.===.|",
-    "|.....F............|",
-    "|.===.=====.==.===.|",
-    "|..................|",
-    "|.....===...==.....|",
-    "|............F.....|",
-    "|==================|"
-};
-
 //estructura en la que se generaran las puntuaciones
 
 typedef struct{
@@ -87,6 +73,7 @@ int main()
     fprintf(fichero_puntuacion,"Puntuacion: %i\n", jugador1.puntos);
     fclose(fichero_puntuacion);
 
+
     return 0;
 }
 
@@ -107,16 +94,31 @@ void mododejuego2()
 void imprimir_mapa()
 {
     int fila, columna;
-    int maximofilas = 9;
-    int maximocolumnas = 22;
+    int maximofilas = 10;
+    int maximocolumnas = 14;
+    char mapa[10][14]={
+    "|===========|",
+    "|...F.......|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.....F.....|",
+    "|.===.=====.|",
+    "|===========|"
+};
+
 
     for(fila=0 ; fila<maximofilas ; fila++){
-        for(columna=0 ; columna<maximocolumnas ; columna++)
+            for(columna=0 ; columna<maximocolumnas ; columna++)
             printf("%c\t", mapa[fila][columna]);
 
         printf("\n");
-    }
+
 }
+}
+
 
 
 
