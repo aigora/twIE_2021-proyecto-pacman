@@ -119,6 +119,40 @@ void imprimir_mapa()
 }
 }
 
+void movimiento_pacman()
+{
+    int tecla, i, j;
+
+    tecla = getchar();
+
+    char mapa[10][14]={
+    "|===========|",
+    "|...F.......|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.====.===..|",
+    "|.....C.....|",
+    "|.===.=====.|",
+    "|===========|"
+};
+
+
+    if (tecla = KEY_UP && mapa[i][j] = 'C')
+        mapa[i-1][j] = mapa[i][j]
+        mapa[i][j] = '_';
+        else if (tecla = KEY_DOWN && mapa[i][j] = 'C')
+            mapa[i+1][j] = mapa[i][j]
+            mapa[i][j] = '_';
+        else if (tecla = KEY_RIGHT && mapa[i][j]='C')
+            mapa[i][j+1] = mapa[i][j]
+            mapa[i][j] = '_';
+        else if (tecla = KEY_LEFT && mapa[i][j]='C')
+            mapa[i][j-1] = mapa[i][j]
+            mapa[i][j] = '_';
+}
+
 
 
 
