@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 #define KEY_UP 72
 #define KEY_DOWN 80
@@ -83,11 +84,14 @@ int main()
 void mododejuego1()
 {
     imprimir_mapa();
+    movimiento_pacman();
 
 }
 
 void mododejuego2()
 {
+    imprimir_mapa();
+    movimiento_pacman();
 
 }
 
@@ -104,7 +108,7 @@ void imprimir_mapa()
     "|.====.===..|",
     "|.====.===..|",
     "|.====.===..|",
-    "|.....F.....|",
+    "|.....C.....|",
     "|.===.=====.|",
     "|===========|"
 };
@@ -121,9 +125,8 @@ void imprimir_mapa()
 
 void movimiento_pacman()
 {
-    int tecla, i, j;
-
-    tecla = getchar();
+    int i, j;
+    char tecla;
 
     char mapa[10][14]={
     "|===========|",
@@ -137,20 +140,23 @@ void movimiento_pacman()
     "|.===.=====.|",
     "|===========|"
 };
+while (1)
+{
+    tecla= getchar();
+    switch (tecla){
+    case 'KEY_UP': mapa[i+1][j] = mapa[i][j];
+    break;
+    case 'KEY_DOWN': mapa[i-1][j] = mapa[i][j];
+    break;
+    case 'KEY_RIGHT': mapa[i][j+1] = mapa[i][j];
+    break;
+    case 'KEY_LEFT':   mapa[i][j-1] = mapa[i][j];
+    break;
+    default: printf("Error \n");
 
+}
 
-    if (tecla = KEY_UP && mapa[i][j] = 'C')
-        mapa[i-1][j] = mapa[i][j]
-        mapa[i][j] = '_';
-        else if (tecla = KEY_DOWN && mapa[i][j] = 'C')
-            mapa[i+1][j] = mapa[i][j]
-            mapa[i][j] = '_';
-        else if (tecla = KEY_RIGHT && mapa[i][j]='C')
-            mapa[i][j+1] = mapa[i][j]
-            mapa[i][j] = '_';
-        else if (tecla = KEY_LEFT && mapa[i][j]='C')
-            mapa[i][j-1] = mapa[i][j]
-            mapa[i][j] = '_';
+}
 }
 
 
