@@ -45,13 +45,40 @@ int main()
 
     //Aqui el menu nos da a elegir entre los 3 modos de juego
 
-    printf("***************************************************************\n\n");
-    printf("                   Eliga el modo de juego                    \n\n\n");
-    printf("   Escriba el numero del modo de juego y seguido su nombre: 1 manuel\n\n");
-    printf("  -Para modo de juego 1 (Clasico) escriba 1\n\n");
-    printf("  -Para modo de juego 2 (Caza a los fantasmas) escriba 2\n\n");
-    printf("  -Para cerrar programa pulse cualquier otra tecla e intro\n\n");
-    printf("***************************************************************\n");
+    printf("***********************************************************************\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("*");
+    printf("                       Eliga el modo de juego                        ");
+    printf("*\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("*");
+    printf("  Escriba el numero del modo de juego y seguido su nombre: 1 manuel ");
+    printf(" *\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("*");
+    printf("  -Para modo de juego 1 (Clasico) escriba 1");
+    printf("                          *\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("*");
+    printf("  -Para modo de juego 2 (Caza a los fantasmas) escriba 2");
+    printf("             *\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("*");
+    printf("  -Para cerrar probrama pulse cualquier otra tecla e intro");
+    printf("           *\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("*");
+    printf("                                                                     *\n");
+    printf("***********************************************************************\n");
+
     scanf("%i %s",&seleccion, &jugador1.nombre);
 
     //Aqui se desarrolla el bucle del menú
