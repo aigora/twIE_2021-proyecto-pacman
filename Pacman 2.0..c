@@ -10,11 +10,7 @@ void mododejuego2();
 
 //funciones de movimiento
 
-void movimiento_pacman();
 void puntos_modo1();
-void colision_fantasma();
-void puntos_modo2();
-void colisionmapa();
 
 //definimos la funcion que genera el mapa en pantalla
 
@@ -106,14 +102,14 @@ int main()
 void mododejuego1()
 {
     imprimir_mapa();
-    movimiento_pacman();
+
 
 }
 
 void mododejuego2()
 {
     imprimir_mapa();
-    movimiento_pacman();
+
 
 }
 
@@ -122,34 +118,7 @@ void imprimir_mapa()
     int fila, columna;
     int maximofilas = 10;
     int maximocolumnas = 14;
-    char mapa[10][14]={
-    "|===========|",
-    "|...F.......|",
-    "|.====.===..|",
-    "|.====.===..|",
-    "|.====.===..|",
-    "|.====.===..|",
-    "|.====.===..|",
-    "|.....C.....|",
-    "|.===.=====.|",
-    "|===========|"
-};
-
-
-    for(fila=0 ; fila<maximofilas ; fila++){
-            for(columna=0 ; columna<maximocolumnas ; columna++)
-            printf("%c\t", mapa[fila][columna]);
-
-        printf("\n");
-
-}
-}
-
-void movimiento_pacman()
-{
-    int i, j;
     char tecla;
-
     char mapa0[10][14]={
     "|===========|",
     "|...F.......|",
@@ -884,11 +853,12 @@ char mapa60[10][14]={
     "|===========|"
 };
 
+    for(fila=0 ; fila<maximofilas ; fila++){
+            for(columna=0 ; columna<maximocolumnas ; columna++)
+            printf("%c\t", mapa0[fila][columna]);
 
+        printf("\n");
 
 }
-
-
-
-
+}
 
